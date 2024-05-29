@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  all: unset;
+}
+
+body {
+  font-familly: 'Inter', sans-serif;
+  background-color: #e1e8eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
