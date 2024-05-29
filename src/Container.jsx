@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Stats from './Stats';
 import Textarea from './Textarea';
+import { FACEBOOK_MAX_CHARACTERS, TWITTER_MAX_CHARACTERS } from './constants';
 
 const Container = () => {
   const [text, setText] = useState('');
@@ -8,8 +9,8 @@ const Container = () => {
   const stats = {
     numberOfWords: text.split(' ').filter((word) => word !== '').length,
     numberOfCharacters: text.length,
-    numberOfTwitterCharacters: 220 - text.length,
-    numberOfFacebookCharacters: 2200 - text.length,
+    numberOfTwitterCharacters: TWITTER_MAX_CHARACTERS - text.length,
+    numberOfFacebookCharacters: FACEBOOK_MAX_CHARACTERS - text.length,
   };
 
   return (
