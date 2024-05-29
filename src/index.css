@@ -59,6 +59,7 @@ body {
 }
 
 .textarea {
+  position: relative;
   resize: none;
   flex: 2;
   font: inherit;
@@ -79,7 +80,7 @@ body {
   position: absolute;
   bottom: 15px;
   left: 35px;
-  color: red;
+  color: #ee4e4e;
   font-size: 14px;
   margin-top: 5px;
   margin-left: 5px;
