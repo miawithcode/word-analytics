@@ -63,11 +63,10 @@ body {
   flex: 2;
   font: inherit;
   padding: 30px 40px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .textarea::placeholder {
-  font-weight: 500;
   color: #959c9f;
 }
 
