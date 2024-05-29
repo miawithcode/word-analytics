@@ -5,6 +5,8 @@ const Textarea = () => {
   const [text, setText] = useState('');
   const [warningText, setWarningText] = useState('');
 
+  const numberOfCharacters = text.length;
+
   const handleChange = (e) => {
     let newText = e.target.value;
 
