@@ -5,20 +5,17 @@ import Textarea from './Textarea';
 const Container = () => {
   const [text, setText] = useState('');
 
-  const numberOfWords = text.split(' ').filter((word) => word !== '').length;
-  const numberOfCharacters = text.length;
-  const numberOfTwitterCharacters = 220 - text.length;
-  const numberOfFacebookCharacters = 2200 - text.length;
+  const stats = {
+    numberOfWords: text.split(' ').filter((word) => word !== '').length,
+    numberOfCharacters: text.length,
+    numberOfTwitterCharacters: 220 - text.length,
+    numberOfFacebookCharacters: 2200 - text.length,
+  };
 
   return (
     <main className="container">
       <Textarea text={text} setText={setText} />
-      <Stats
-        numberOfWords={numberOfWords}
-        numberOfCharacters={numberOfCharacters}
-        numberOfTwitterCharacters={numberOfTwitterCharacters}
-        numberOfFacebookCharacters={numberOfFacebookCharacters}
-      />
+      <Stats stats={stats} />
     </main>
   );
 };
