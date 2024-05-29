@@ -12,7 +12,9 @@ const Stats = ({ stats }) => {
 const Stat = ({ number, label }) => {
   return (
     <section className="stat">
-      <span className="stat-number">{number}</span>
+      <span className={`stat-number ${number < 0 && 'stat-number-limit'}`}>
+        {number}
+      </span>
       <h2 className="stat-label">{label}</h2>
     </section>
   );
